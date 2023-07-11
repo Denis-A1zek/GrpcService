@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Protos";
+
+package two_way;
+
+service TwoWay{
+	rpc TwoWayDataStream (stream TwoWayRequest) returns (stream TwoWayResponse);
+} 
+
+message TwoWayRequest {
+	string content = 1;
+}
+
+message TwoWayResponse {
+	string content = 1;
+}

@@ -20,6 +20,8 @@
 	<ItemGroup>
 		<Protobuf Include="Protos\greet.proto" />
 		<Protobuf Include="Protos\messenger.proto" />
+	    <Protobuf Include="Protos\receiver.proto" />
+		<Protobuf Include="Protos\two_way.proto" />
 	</ItemGroup>
 
 </Project>

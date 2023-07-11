@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcService.Protos";
+
+package receiver;
+
+service ReceiverMessenger{
+	rpc ReceiverDataStream (stream ReceiverRequest) returns (ReceiverResponse);
+} 
+
+message ReceiverRequest {
+	string content = 1;
+}
+
+message ReceiverResponse {
+	string content = 1;
+}
